@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
+  <!-- My CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <title>My Portfolio | Kifly vly</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger shadow-sm fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><i class="bi bi-peace-fill text-primary"></i> Kifly Vly</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Tutup Navbar -->
+
+  <!-- Jumbotron -->
+  <section class="jumbotron text-center">
+    <img src="img/vlyy.jpg" alt="vly" width="200" class="rounded-circle img-thumbnail" />
+    <h1 class="display-4">Kifly vly</h1>
+    <p class="lead">Programmer</p>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,64L40,80C80,96,160,128,240,128C320,128,400,96,480,106.7C560,117,640,171,720,170.7C800,171,880,117,960,85.3C1040,53,1120,43,1200,58.7C1280,75,1360,117,1400,138.7L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Tutup Jumbotron -->
+
+  <!-- About -->
+  <section id="about">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+        <div class="row justify-content-center fs-5 text-center">
+          <div class="col-md-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cum consectetur odio quaerat magnam
+              temporibus nobis ducimus, maxime repellendus quod.</p>
+          </div>
+          <div class="col-md-4">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, incidunt consectetur! Quae quis est ex
+              amet aliquam reprehenderit voluptates rerum! incidunt consectetur! Quae quis est ex amet aliquam
+              reprehenderit voluptates
+              rerum!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#659ee9" fill-opacity="1"
+        d="M0,32L40,26.7C80,21,160,11,240,53.3C320,96,400,192,480,192C560,192,640,96,720,64C800,32,880,64,960,74.7C1040,85,1120,75,1200,80C1280,85,1360,107,1400,117.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Tutup About -->
+
+  <!-- Project -->
+  <section id="project">
+    <div class="container">
+      <div class="row mt-5 text-center">
+        <div class="col">
+          <h1>VLY Movie Database</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control input-keyword" placeholder="Search Movie" />
+            <div class="input-group-append">
+              <button class="btn btn-danger search-button" id="basic-addon2">Cari</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row movie-container justify-content-center"></div>
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>My Gallery</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/11.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/55.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/22.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/44.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img src="img/33.jpg" class="card-img-top" alt="project1" />
+              <div class="card-body">
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fff" fill-opacity="1"
+        d="M0,32L40,64C80,96,160,160,240,197.3C320,235,400,245,480,224C560,203,640,149,720,149.3C800,149,880,203,960,224C1040,245,1120,235,1200,208C1280,181,1360,139,1400,117.3L1440,96L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- tutup Project -->
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Contact Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+            <strong>Terima kasih!</strong> Pesan anda sudah di terima
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+          <form name="vly-contact-form">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nama Lengkap</label>
+              <input type="text" class="form-control" id="name" aria-describedby="name" name="nama" />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" aria-describedby="email" name="email" />
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+            <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+              <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+              Loading...
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#dc3545" fill-opacity="1"
+        d="M0,64L40,74.7C80,85,160,107,240,149.3C320,192,400,256,480,272C560,288,640,256,720,213.3C800,171,880,117,960,133.3C1040,149,1120,235,1200,234.7C1280,235,1360,149,1400,106.7L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z">
+      </path>
+    </svg>
+  </section>
+  <!-- Tutup Contact -->
+
+  <!-- Footer-->
+  <footer class="bg-danger text-white text-center pb-5">
+    <p>Created with <i class="bi bi-heart-fill text-primary"></i> by <a href="" class="text-white fw-bold">Kifly Vly</a>
+    </p>
+  </footer>
+  <!-- Tutup Footer-->
+
+  <!-- Modal -->
+  <div class="modal fade" id="movieDetailModal" tabindex="-1" aria-labelledby="movieDetailModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="movieDetailModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#movieDetailModal">
+    Launch demo modal
+  </button>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
+  <script src="script.js"></script>
+
+  <script>
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbyBsBL-e7gv32KMC1bFWfYnsTMJ-EHDmVUEZ6VknvwJcQo037joCdIxceV3KR9g-Pu_/exec";
+    const form = document.forms["vly-contact-form"];
+    const btnKirim = document.querySelector(".btn-kirim");
+    const btnLoading = document.querySelector(".btn-loading");
+    const myalert = document.querySelector(".my-alert");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      //ketikasubmit diklik
+      // tampilkan tombol loading, hilangkan tombol kirim
+      btnLoading.classList.toggle("d-none");
+      btnKirim.classList.toggle("d-none");
+      fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form)
+        })
+        .then(response => {
+          btnLoading.classList.toggle("d-none");
+          btnKirim.classList.toggle("d-none");
+          myalert.classList.toggle("d-none");
+
+          form.reset();
+          console.log("Success!", response);
+        })
+        .catch(error => console.error("Error!", error.message));
+    });
+  </script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
